@@ -1,14 +1,17 @@
 import React from "react";
-import HeaderPage from "./pages/header";
+import HeaderPage from "./components/header";
 import HomePage from "./pages/home";
-import FooterPage from "./pages/footer";
+import FooterPage from "./components/footer";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <HeaderPage />
-      <HomePage />
-      <FooterPage />
+    <div>
+      <BrowserRouter>
+        <HeaderPage />
+        <HomePage />
+        <FooterPage />
+      </BrowserRouter>
     </div>
   );
 }
