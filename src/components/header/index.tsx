@@ -12,9 +12,8 @@ function HeaderPage() {
             <div className="col-lg-4 col-md-5 col-sm-6 col-xs-12">
               <ul>
                 <li>+180-123-4567</li>
-                <li>info@demo.com</li>
                 <li>
-                  <a href="#">Help</a>
+                  <Link to="#">Help</Link>
                 </li>
               </ul>
             </div>
@@ -36,7 +35,6 @@ function HeaderPage() {
                   </Link>
                 </div>
               </div>
-
               <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div className="search-bg">
                   <input
@@ -49,33 +47,31 @@ function HeaderPage() {
                   </button>
                 </div>
               </div>
-
               <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <div className="account-section">
                   <ul>
                     <li>
-                      <a href="#" className="title hidden-xs">
+                      <Link to="/" className="hidden-xs">
                         My Account
-                      </a>
+                      </Link>
                     </li>
                     <li className="hidden-xs">|</li>
                     <li>
-                      <a href="#" className="title hidden-xs">
+                      <Link to="#" className="hidden-xs">
                         Register
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className="title">
-                        <i className="fa fa-shopping-cart"></i>{" "}
+                      <Link to={"/"}>
+                        <i className="fa fa-shopping-cart"></i>
                         <sup className="cart-quantity">0</sup>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-
           <div className="navigation">
             <div className="container">
               <div className="row">
